@@ -40,25 +40,6 @@
   </entry>
   
   <entry>
-    <title>Hexo命令及使用</title>
-    <link href="https://dgfatt.github.io/posts/f188fc1/"/>
-    <id>https://dgfatt.github.io/posts/f188fc1/</id>
-    <published>2020-04-21T02:08:44.000Z</published>
-    <updated>2020-04-21T05:51:59.307Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo-命令"><a href="#Hexo-命令" class="headerlink" title="Hexo 命令"></a><strong>Hexo 命令</strong></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g <span class="comment">#安装Hexo</span></span><br><span class="line">npm update hexo -g <span class="comment">#升级</span></span><br><span class="line">hexo init <span class="comment">#初始化博客</span></span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="命令简写"><a href="#命令简写" class="headerlink" title="命令简写"></a><strong>命令简写</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">"我的博客"</span> == hexo new <span class="string">"我的博客"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo g == hexo generate <span class="comment">#生成</span></span><br><span class="line">hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">hexo d == hexo deploy <span class="comment">#部署</span></span><br><span class="line"></span><br><span class="line">hexo server <span class="comment">#Hexo会监视文件变动并自动更新，无须重启服务器</span></span><br><span class="line">hexo server -s <span class="comment">#静态模式</span></span><br><span class="line">hexo server -p 5000 <span class="comment">#更改端口</span></span><br><span class="line">hexo server -i 192.168.1.1 <span class="comment">#自定义 IP</span></span><br><span class="line">hexo clean <span class="comment">#清除缓存，若是网页正常情况下可以忽略这条命令</span></span><br></pre></td></tr></table></figure><h2 id="新项目创建时所使用命令"><a href="#新项目创建时所使用命令" class="headerlink" title="新项目创建时所使用命令"></a>新项目创建时所使用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli  <span class="comment">#安装hexo脚手架</span></span><br><span class="line">$ hexo init blog  <span class="comment">#创建并初始化新项目blog</span></span><br><span class="line">$ cnpm install hexo --save  <span class="comment">#安装hexo</span></span><br><span class="line">$ hexo new test_my_site  <span class="comment">#新建页面test_my_site</span></span><br><span class="line">$ cnpm install hexo-deployer-git --save  <span class="comment">#安装Git部署插件</span></span><br><span class="line">$ hexo clean  <span class="comment">#清除缓存</span></span><br><span class="line">$ cnpm install --save ajv@^6.10.2 bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.1 inferno@^7.3.3 inferno-create-element@^7.3.3  <span class="comment">#安装主题amazing所需要的插件</span></span><br><span class="line">$ cnpm install --save hexo-pagination@^1.0.0 hexo-renderer-stylus@^1.1.0  <span class="comment">#安装需要的插件</span></span><br><span class="line">$ hexo g  <span class="comment">#编译 </span></span><br><span class="line">$ hexo s  <span class="comment">#启动服务 </span></span><br><span class="line">$ hexo d  <span class="comment">#推到远程</span></span><br></pre></td></tr></table></figure><h2 id="已有项目重新编译所使用命令"><a href="#已有项目重新编译所使用命令" class="headerlink" title="已有项目重新编译所使用命令"></a>已有项目重新编译所使用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install <span class="comment">#安装依赖包（只需要执行一次）可直接把本文最后的json文件内容复制到博客下面的依赖文件package.json后在执行此命令，如果原来已有node_modules文件夹，请先删除在执行此命令</span></span><br><span class="line">$ hexo clean <span class="comment">#清除缓存</span></span><br><span class="line">$ hexo g <span class="comment">#编译 </span></span><br><span class="line">$ hexo s <span class="comment">#启动服务 </span></span><br><span class="line">$ hexo d <span class="comment">#推到远程</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Hexo-命令&quot;&gt;&lt;a href=&quot;#Hexo-命令&quot; class=&quot;headerlink&quot; title=&quot;Hexo 命令&quot;&gt;&lt;/a&gt;&lt;strong&gt;Hexo 命令&lt;/strong&gt;&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo -g &lt;span class=&quot;comment&quot;&gt;#安装Hexo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm update hexo -g &lt;span class=&quot;comment&quot;&gt;#升级&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo init &lt;span class=&quot;comment&quot;&gt;#初始化博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="https://dgfatt.github.io/posts/4a17b156/"/>
     <id>https://dgfatt.github.io/posts/4a17b156/</id>
@@ -82,13 +63,15 @@
     <link href="https://dgfatt.github.io/posts/7525f478/"/>
     <id>https://dgfatt.github.io/posts/7525f478/</id>
     <published>2020-04-20T06:34:51.000Z</published>
-    <updated>2020-04-21T05:47:05.319Z</updated>
+    <updated>2020-04-22T06:39:24.460Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
+    
+      <category term="test" scheme="https://dgfatt.github.io/tags/test/"/>
     
   </entry>
   
